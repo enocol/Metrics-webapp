@@ -16,12 +16,12 @@ const TeamDetails = () => {
         );
         setGameData(response.data);
       } catch (error) {
-        console.error('Error fetching data:', error);
+        throw new Error('an exception has occured');
       }
     }
 
     fetchData();
-  }, []);
+  });
 
   if (!gameData) {
     return <div>Loading...</div>;
@@ -40,17 +40,24 @@ const TeamDetails = () => {
 
       <div className="statistics">
         <div>
-          <span className="data">Home Score:</span> {gameData.home_team_score}
+          <span className="data">Home Score:</span>
+          {' '}
+          {gameData.home_team_score}
         </div>
 
         <div>
-          <span className="data">Season:</span> {gameData.season}
+          <span className="data">Season:</span>
+          {' '}
+          {gameData.season}
         </div>
         <div>
-          <span className="data">Period:</span> {gameData.period}
+          <span className="data">Period:</span>
+          {' '}
+          {gameData.period}
         </div>
         <div>
-          <span className="data">Visitor Team Score:</span>{' '}
+          <span className="data">Visitor Team Score:</span>
+          {' '}
           {gameData.visitor_team_score}
         </div>
       </div>

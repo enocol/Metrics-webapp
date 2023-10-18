@@ -1,11 +1,9 @@
-const Header = () => {
-  return (
-    <div className="header">
-      <i className="fa-solid fa-house"></i>
+const Header = () => (
+  <div className="header">
+    <i className="fa-solid fa-house" />
 
-      <div className="title">Ball Don't lie Team Stats</div>
-    </div>
-  );
-};
+    <div className="title">Ball Dont lie Team Stats</div>
+  </div>
+);
 
 export default Header;

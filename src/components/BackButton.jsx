@@ -1,13 +1,11 @@
 import { Link } from 'react-router-dom';
 
-const BackButton = () => {
-  return (
-    <div className="backButton-container">
-      <Link to="/">
-        <i class="fa-solid fa-less-than fa-lg"></i>
-      </Link>
-    </div>
-  );
-};
+const BackButton = () => (
+  <div className="backButton-container">
+    <Link to="/">
+      <i className="fa-solid fa-less-than fa-lg" />
+    </Link>
+  </div>
+);
 
 export default BackButton;

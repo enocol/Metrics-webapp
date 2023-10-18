@@ -1,8 +1,8 @@
 import './App.css';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchcategories } from './redux/CategoriesSlice';
 import { Route, Routes } from 'react-router-dom';
+import { fetchcategories } from './redux/CategoriesSlice';
 import Home from './components/Home';
 import TeamDetails from './redux/TeamDetails';
 
@@ -14,7 +14,7 @@ function App() {
     if (status === 'idle') {
       dispatch(fetchcategories());
     }
-  }, [dispatch]);
+  });
 
   return (
     <div>
@@ -27,4 +27,3 @@ function App() {
 }
 
 export default App;
-

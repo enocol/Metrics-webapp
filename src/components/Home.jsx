@@ -11,9 +11,9 @@ const Home = () => {
 
   useEffect(() => {
     if (category) dispatch(fetchcategories());
-  }, [dispatch]);
+  }, [dispatch, category]);
 
-  if (category)
+  if (category) {
     return (
       <div className="home">
         <Header />
@@ -22,11 +22,14 @@ const Home = () => {
             <Link to={`/games/${m.id}`} key={m.id} className="link">
               <li className="list">
                 <div className="icon">
-                  <i className="fa-solid fa-arrow-up fa-rotate-90 fa-xs"></i>
+                  <i className="fa-solid fa-arrow-up fa-rotate-90 fa-xs" />
                 </div>
                 <div className="container">
                   <div className="name">{m.home_team.full_name}</div>
-                  <div>Home score: {m.home_team_score}</div>
+                  <div>
+                    Home score:
+                    {m.home_team_score}
+                  </div>
                 </div>
               </li>
             </Link>
@@ -34,6 +37,9 @@ const Home = () => {
         </ul>
       </div>
     );
+  }
+
+  return null;
 };
 
 export default Home;
