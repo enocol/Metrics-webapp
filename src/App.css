@@ -10,11 +10,11 @@
 .header {
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 10px;
-  height: 100px;
+  text-align: right;
+  padding: 0 60px;
+  height: 150px;
   background-color: #ec407a;
 }
 
@@ -102,8 +102,9 @@ body {
   background-color: #ec407a;
 }
 
-.fa-lg {
+.fa-sm {
   color: #fff;
+  font-size: 15px;
 }
 
 article {
@@ -125,18 +126,34 @@ article {
   padding: 5px;
 }
 
+.name-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  height: auto;
+}
+
 .team-name {
-  width: 100%;
-  font-weight: bolder;
-  text-align: end;
+  width: 50%;
+  font-weight: 900;
+  display: flex;
+  justify-content: flex-end;
   color: #fff;
   padding: 10px;
+  text-align: right;
+  font-size: 25px;
 }
 
 .by-team {
   padding: 5px;
   font-weight: bold;
   font-size: 10px;
+}
+
+.season {
+  color: #fff;
+  font-weight: bolder;
 }
 
 @media (min-width: 450px) {
