@@ -1,9 +1,16 @@
-const Header = () => (
-  <div className="header">
-    <i className="fa-solid fa-house" />
+import { useSelector } from 'react-redux/es/hooks/useSelector';
 
-    <div className="title">Ball Dont lie Team Stats</div>
-  </div>
-);
+const Header = () => {
+  const category = useSelector((state) => state.category.category.data);
+
+  return (
+    <div className="header">
+      <h1 className="title">America</h1>
+
+      <div className="season">{category[0].season}</div>
+    </div>
+  );
+};
 
 export default Header;
+
