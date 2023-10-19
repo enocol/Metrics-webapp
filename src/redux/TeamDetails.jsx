@@ -42,23 +42,31 @@ const TeamDetails = () => {
         <div className="flex-items">
           <span className="data">Home Score:</span>
 
-          {gameData.home_team_score}
+          <span className="data">{gameData.home_team_score}</span>
         </div>
 
         <div className="flex-items">
           <span className="data">Season:</span>
-
-          {gameData.season}
+          <span className="data">{gameData.season}</span>
         </div>
         <div className="flex-items">
-          <span className="data">Period:</span>
-
-          {gameData.period}
+          <span className="data">Period </span>
+          <span className="data">{gameData.period}</span>
         </div>
         <div className="flex-items">
           <span className="data">Visitor Team Score:</span>
 
-          {gameData.visitor_team_score}
+          <span className="data">{gameData.visitor_team_score}</span>
+        </div>
+        <div className="flex-items">
+          <span className="data">Team Score:</span>
+
+          <span className="data" />
+        </div>
+        <div className="flex-items">
+          <span className="data">Others:</span>
+
+          <span className="data" />
         </div>
       </div>
     </div>
