@@ -21,7 +21,7 @@ const TeamDetails = () => {
     }
 
     fetchData();
-  });
+  }, []);
 
   if (!gameData) {
     return <div>Loading...</div>;
@@ -34,30 +34,22 @@ const TeamDetails = () => {
         <Header />
       </div>
 
-      <div className="heading">
-        <h1>{gameData.home_team.full_name}</h1>
-      </div>
+      <div className="heading"></div>
 
       <div className="statistics">
-        <div>
-          <span className="data">Home Score:</span>
-          {' '}
-          {gameData.home_team_score}
+        <p className="team-name">{gameData.home_team.full_name}</p>
+        <div className="flex-items">
+          <span className="data">Home Score:</span> {gameData.home_team_score}
         </div>
 
-        <div>
-          <span className="data">Season:</span>
-          {' '}
-          {gameData.season}
+        <div className="flex-items">
+          <span className="data">Season:</span> {gameData.season}
         </div>
-        <div>
-          <span className="data">Period:</span>
-          {' '}
-          {gameData.period}
+        <div className="flex-items">
+          <span className="data">Period:</span> {gameData.period}
         </div>
-        <div>
-          <span className="data">Visitor Team Score:</span>
-          {' '}
+        <div className="flex-items">
+          <span className="data">Visitor Team Score:</span>{' '}
           {gameData.visitor_team_score}
         </div>
       </div>
