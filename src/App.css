@@ -156,6 +156,16 @@ article {
   font-weight: bolder;
 }
 
+.search {
+  margin: 5px;
+  height: 30px;
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
 @media (min-width: 450px) {
   body {
     display: none;
