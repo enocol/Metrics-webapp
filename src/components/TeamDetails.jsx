@@ -31,9 +31,11 @@ const TeamDetails = () => {
       <div className="btn-container">
         <BackButton />
       </div>
-      <h1 className="team-name">
-        {gameData.home_team.full_name.toUpperCase()}
-      </h1>
+      <div className="name-container">
+        <span className="team-name">
+          {gameData.home_team.full_name.toUpperCase()}
+        </span>
+      </div>
 
       <div className="heading" />
 
@@ -74,3 +76,4 @@ const TeamDetails = () => {
 };
 
 export default TeamDetails;
+
