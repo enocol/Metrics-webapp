@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import { fetchcategories } from './redux/CategoriesSlice';
 import Home from './components/Home';
-import TeamDetails from './redux/TeamDetails';
+import TeamDetails from './components/TeamDetails';
 
 function App() {
   const dispatch = useDispatch();
@@ -27,3 +27,4 @@ function App() {
 }
 
 export default App;
+
