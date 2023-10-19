@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import Header from '../components/Header';
 import BackButton from '../components/BackButton';
 
 const TeamDetails = () => {
@@ -31,13 +30,15 @@ const TeamDetails = () => {
     <div>
       <div className="btn-container">
         <BackButton />
-        <Header />
       </div>
+      <h1 className="team-name">
+        {gameData.home_team.full_name.toUpperCase()}
+      </h1>
 
-      <div className="heading" />
+      <div className="heading"></div>
 
       <div className="statistics">
-        <p className="team-name">{gameData.home_team.full_name}</p>
+        <p className="by-team">STATS BY TEAM</p>
         <div className="flex-items">
           <span className="data">Home Score:</span>
 
@@ -65,3 +66,4 @@ const TeamDetails = () => {
 };
 
 export default TeamDetails;
+
