@@ -1,6 +1,6 @@
 <a name="readme-top"></a>
 
-  <h3><b>Math Magicians</b></h3>
+  <h3><b>Game Statistics</b></h3>
 
 </div>
 
@@ -26,12 +26,9 @@
 - [❓ FAQ (OPTIONAL)](#faq)
 - [📝 License](#license)
 
-# 📖 [Math Magicians] <a name="about-project"></a>
+# 📖 [Game Statistics] <a name="about-project"></a>
 
-**[Math Magicians]** "Math magicians" is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
-
-Make simple calculations.
-Read a random math-related quote.
+**[Game Statistics]** "Game Statistics" is a website for all fans of American Football Games. It is a Single Page App (SPA) that allows users to view Game statics for a given season.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -50,12 +47,11 @@ Read a random math-related quote.
 
 ### Key Features <a name="key-features"></a>
 
-- **[Calcultor component]**
-- **[Home page compoent]**
-- **[Home page compenent]**
-- **[Navigation bar with links]**
+- **[Home page with game Metrix]**
+- **[Home page with search games field]**
+- **[Details page component]**
+- **[Back Button to the home page]**
 - **[Showing pages using React Router]**
-- **[Showing a loading and error status if an error occurs]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -86,20 +82,20 @@ Install [Node Js](https://nodejs.org/en) and [NPM](https://docs.npmjs.com/cli/v6
 Open your commandline (if your are on windows ) or Terminal (if you are on Mac or Linux) and paste this command:
 
 ```sh
-git clone https://github.com/enocol/math-magicians
+git clone https://github.com/enocol/Metrics-webapp
 ```
 
-then you will see the **Math-margicians** on your system then type this:
+then you will see the **Metrics-webapp** on your system then type this:
 
 ```sh
-cd math-margicians
+cd Metrics-webap
 ```
 
 Now you successfully installed it.
 
 ### Usage
 
-Inside **math-margicians** on a terminal, type npm i to install dependencies
+Inside **Metrics-webap** on a terminal, type npm i to install dependencies
 After dependencies are installed, type npm start
 
 ### Run tests
@@ -111,8 +107,8 @@ in a ternimal, type npm run test
 
 You can deploy this project using:
 
+**Github pages**
 **Renda**
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -157,7 +153,7 @@ If you like this project follow Me on my social media
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-Above all, to Almighty Allah be the Glory.
+Many thanks goes to Nelson Sakwa on Behance for the design inspiration.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,3 +164,4 @@ Above all, to Almighty Allah be the Glory.
 This project is [MIT](./LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
