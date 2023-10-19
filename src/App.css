@@ -93,7 +93,6 @@ body {
 .data {
   font-size: 15px;
   font-weight: bolder;
-  display: flex;
 }
 
 .btn-container {
