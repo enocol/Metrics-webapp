@@ -14,7 +14,7 @@
   },
   "extends": [
     "airbnb",
-    //"plugin:react/recommended",
+    "plugin:react/recommended",
     "plugin:react-hooks/recommended"
   ],
   //"plugins": ["react"],
@@ -24,7 +24,8 @@
     "import/no-unresolved": "off",
     "no-shadow": "off",
     "react-hooks/exhaustive-deps": "off",
-    "import/no-extraneous-dependencies": "off"
+    "import/no-extraneous-dependencies": "off",
+    "no-param-reassign": "off"
   },
   "overrides": [
     {

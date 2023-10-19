@@ -12,6 +12,11 @@ describe('categoryReducer', () => {
       payload: 'exampleCategory',
     };
 
+    const categoryReducer = (state, action) => {
+      state.status = 'fulfilled';
+      state.category = action.payload;
+    };
+
     const newState = { ...initialState };
     categoryReducer(newState, action);
 
@@ -24,10 +29,4 @@ describe('categoryReducer', () => {
   test('button clicks should be go back to the home page', () => {
     expect(true).toBe(true);
   });
-
-  const categoryReducer = (state, action) => {
-    state.status = 'fulfilled';
-    state.category = action.payload;
-  };
 });
-
