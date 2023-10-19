@@ -35,7 +35,7 @@ const TeamDetails = () => {
         {gameData.home_team.full_name.toUpperCase()}
       </h1>
 
-      <div className="heading"></div>
+      <div className="heading" />
 
       <div className="statistics">
         <p className="by-team">STATS BY TEAM</p>
@@ -74,4 +74,3 @@ const TeamDetails = () => {
 };
 
 export default TeamDetails;
-
