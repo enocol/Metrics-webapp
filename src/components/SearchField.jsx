@@ -11,7 +11,7 @@ const SearchField = ({ onSearch }) => {
   };
 
   return (
-    <div>
+    <div className="searchfield">
       <input
         type="text"
         placeholder="Seach by team name"
@@ -28,3 +28,4 @@ export default SearchField;
 SearchField.propTypes = {
   onSearch: PropTypes.func.isRequired,
 };
+
