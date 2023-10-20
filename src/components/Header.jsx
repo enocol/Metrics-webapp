@@ -1,5 +1,4 @@
 import { useSelector } from 'react-redux/es/hooks/useSelector';
-import image from '../images/map.png';
 
 const Header = () => {
   const category = useSelector((state) => state.category.category.data);
@@ -7,8 +6,8 @@ const Header = () => {
   return (
     <div className="header">
       <div className="icon-container">
-        <i className="fa-solid fa-microphone fa-sm icon1"></i>
-        <i className="fa-solid fa-gear fa-sm icon2"></i>
+        <i className="fa-solid fa-microphone fa-sm icon1" />
+        <i className="fa-solid fa-gear fa-sm icon2" />
       </div>
       <div className="season-container">
         <h1 className="title">America</h1>
@@ -19,4 +18,3 @@ const Header = () => {
 };
 
 export default Header;
-

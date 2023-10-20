@@ -28,4 +28,3 @@ export default SearchField;
 SearchField.propTypes = {
   onSearch: PropTypes.func.isRequired,
 };
-
