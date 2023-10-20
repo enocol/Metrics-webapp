@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import BackButton from './BackButton';
+import Header from './Header';
 
 const TeamDetails = () => {
   const { id } = useParams();
@@ -30,6 +31,7 @@ const TeamDetails = () => {
     <div>
       <div className="btn-container">
         <BackButton />
+        <Header />
       </div>
       <div className="name-container">
         <span className="team-name">
@@ -76,3 +78,4 @@ const TeamDetails = () => {
 };
 
 export default TeamDetails;
+
