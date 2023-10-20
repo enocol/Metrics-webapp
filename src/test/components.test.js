@@ -1,4 +1,5 @@
 import { test, expect } from '@jest/globals';
+import { categoryReducer } from '../redux/CategoriesSlice';
 
 describe('categoryReducer', () => {
   test('should update state with the category from the action', () => {
@@ -12,7 +13,7 @@ describe('categoryReducer', () => {
       payload: 'exampleCategory',
     };
 
-    const categoryReducer = (state, action) => {
+    categoryReducer = (state, action) => {
       state.status = 'fulfilled';
       state.category = action.payload;
     };
@@ -30,3 +31,4 @@ describe('categoryReducer', () => {
     expect(true).toBe(true);
   });
 });
+
