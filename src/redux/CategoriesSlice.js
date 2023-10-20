@@ -1,12 +1,12 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+import Axios from 'axios';
 
 const apiEndpoint = 'https://www.balldontlie.io/api/v1/games/';
 
 export const fetchcategories = createAsyncThunk(
   'category/fetchcategories',
   async () => {
-    const { data } = await axios.get(`${apiEndpoint}`);
+    const { data } = await Axios.get(`${apiEndpoint}`);
 
     return data;
   },

@@ -1,20 +1,14 @@
-import { test, expect } from '@jest/globals';
+import React from 'react';
+import { render, fireEvent, screen } from '@testing-library/react';
+import SearchField from '../components/SearchField';
 
-test('Check if a home cards are  displayed home page properly', () => {
-  const number = 24;
+test('SearchField should call the onSearch function when the input changes', () => {
+  const mockOnSearch = jest.fn();
+  render(<SearchField onSearch={mockOnSearch} />);
 
-  const isEven = number % 2 === 0;
+  const inputElement = screen.getByPlaceholderText('Seach by team name');
 
-  if (isEven) {
-    expect(isEven).toBe(true);
-  } else {
-    expect(isEven).toBe(false);
-  }
-});
+  fireEvent.change(inputElement, { target: { value: 'BostonCeltics' } });
 
-test("Ball Don't Lie Team Stats", () => {
-  const teamStatsAreGreat = true;
-
-  // Assert that the team's stats are great
-  expect(teamStatsAreGreat).toBe(true);
+  expect(mockOnSearch).toHaveBeenCalledWith('BostonCeltics');
 });

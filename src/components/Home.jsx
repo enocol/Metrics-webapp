@@ -1,7 +1,6 @@
-import { useSelector } from 'react-redux/es/hooks/useSelector';
+import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-import { useDispatch } from 'react-redux';
 import { fetchcategories } from '../redux/CategoriesSlice';
 import Header from './Header';
 import SearchField from './SearchField';

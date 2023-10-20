@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import axios from 'axios';
+import Axios from 'axios';
 import BackButton from './BackButton';
 import Header from './Header';
 
@@ -11,7 +11,7 @@ const TeamDetails = () => {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await axios.get(
+        const response = await Axios.get(
           `https://www.balldontlie.io/api/v1/games/${id}`,
         );
         setGameData(response.data);
