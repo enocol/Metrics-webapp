@@ -39,4 +39,3 @@ export const CategoriesSlice = createSlice({
 });
 
 export default CategoriesSlice.reducer;
-
