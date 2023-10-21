@@ -11,7 +11,11 @@ const Home = () => {
   const [search, setSearch] = useState('');
 
   const handleSearch = (query) => {
-    const filtered = category.filter((item) => item.home_team.full_name.toLowerCase().includes(query.toLowerCase()));
+    const filtered = category.filter((item) => {
+      return item.home_team.full_name
+        .toLowerCase()
+        .includes(query.toLowerCase());
+    });
     setSearch(filtered);
   };
 
@@ -71,3 +75,4 @@ const Home = () => {
 };
 
 export default Home;
+
