@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'lato', sans-serif;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 10px 60px 10px 10px;
+  height: 150px;
+  background-color: #ec407a;
+}
+
+body {
+  background-color: #f06292;
+}
+
+.title {
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.backButton-container {
+  padding: 10px 0 10px 15px;
+  background-color: #ec407a;
+}
+
+.category-list {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.list {
+  width: 100%;
+  height: 125px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+  border: 0.5px solid #ec407a;
+}
+
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  color: #fff;
+}
+
+.fa-xs {
+  border-radius: 50%;
+  border: 1px solid;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7px;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+}
+
+.statistics :nth-child(even) {
+  background-color: #ec407a;
+}
+
+.data {
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.btn-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #ec407a;
+}
+
+.fa-sm {
+  color: #fff;
+  font-size: 15px;
+}
+
+article {
+  color: #fff;
+}
+
+.full-name {
+  font-size: 20px;
+  font-weight: bolder;
+  text-align: end;
+}
+
+.flex-items {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+}
+
+.name-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  height: auto;
+}
+
+.team-name {
+  width: 50%;
+  font-weight: 900;
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+  font-size: 25px;
+}
+
+.by-team {
+  padding: 5px;
+  font-weight: bold;
+  font-size: 10px;
+}
+
+.season {
+  color: #fff;
+  font-weight: bolder;
+}
+
+.search {
+  margin: 10px;
+  height: 30px;
+  width: 50%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+
+.icon1 {
+  margin-right: 25px;
+}
+
+.season-container {
+  padding: 20px 0;
+}
+
+.map {
+  width: 100px;
+  height: 100px;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 450px) {
+  body {
+    display: none;
+  }
+}
